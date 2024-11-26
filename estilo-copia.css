@@ -1,0 +1,341 @@
+/*https://colorhunt.co/palette/781c68319da0ffd39afff5e1*/
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    
+}
+
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    line-height: 1.3em;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+.container {
+    
+    margin: 0 2rem;
+}
+
+.header {
+    background-image: linear-gradient(rgb(120, 28, 104), rgb(49, 157, 160), rgb(255, 211, 154));
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.paleta{
+    max-width: 40px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.logo {
+    color: rgb(255, 245, 225);
+    font-family: Corinthia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.2em;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    
+}
+
+.navigation ul li a {
+    display: block;
+    
+    padding: 0.2rem 1rem;
+    transition: all 0.3s linear;
+    
+    border-radius: 5px;
+    font-size: 0.85em;
+    color: rgb(247, 244, 241);
+
+}
+
+.navigation ul li a:hover {
+    background: rgba(238, 230, 197, 0.226);
+}
+
+
+
+.footer {
+    background: gray;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1005px) {
+
+
+
+    .container {
+        
+        padding: 3% 2%;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .navigation ul li a {
+        display: block;
+        
+        padding: 0.5rem 0;
+        transition: all 0.3s linear;
+        
+        border-radius: 5px;
+    }
+
+    .navigation ul li a:hover {
+        background: rgba(238, 230, 197, 0.226);
+    }
+}
+
+
+.info {
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    margin: 0rem;
+}
+
+
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+
+
+li {
+    color: #ffffff;
+}
+
+
+.hover {
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    margin-left: -1rem;
+    margin-top: -2rem;
+}
+
+.image {
+    padding: 0.2rem;
+    background-color: rgb(119, 115, 115);
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+
+}
+
+.hover:hover .image {
+    opacity: 0.5;
+}
+
+.hover:hover .middle {
+    opacity: 1;
+}
+
+.text1 {
+    
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: rgb(5, 5, 5);
+    font-size: 1.4rem;
+
+}
+
+.text2 {
+    
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    color: rgb(5, 5, 5);
+    font-size: 1rem;
+
+}
+
+.pagination {
+
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.pagination a {
+    font-family: 'Times New Roman', Times, serif;
+    background: #ccc;
+    padding: 10px 16px 10px 16px;
+    margin: 1px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    position: relative;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background: #ADADAD;
+    transition-duration: 0.3s;
+}
+
+.active {
+    background: #008894 !important;
+    transition-duration: 0.3s;
+
+}
+
+
+#btnSubir {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(120, 28, 104);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.tarjetaContacto {
+    margin-top: 5rem;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+form label {
+    font-weight: bold; 
+    margin-bottom: 1px; 
+    color: #333; 
+}
+
+
+
+form textarea {
+    width: 100%; 
+    padding: 1px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    box-sizing: border-box; 
+}
+
+form button {
+    padding: 10px; 
+    background-color: rgb(49, 157, 160);
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+
+form button:hover {
+    background-color: rgb(35, 110, 112); 
+}
+
+
